@@ -1,0 +1,20 @@
+.example-full-width {
+    width: 100%;
+  }
+ table {
+    width: 100%;
+  }
+th{
+    color: #fff;
+    background-color: grey;
+}
+.result{
+  align-items: center;
+  padding: 10px;
+  margin: -20px;
+}
+mat-cell, .mat-cell {
+  
+  min-height:auto; 
+  padding: 12px 16px 12px 0;
+}

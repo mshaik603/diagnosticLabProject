@@ -1,0 +1,27 @@
+.headerFooter{
+    background: linear-gradient(to left, #3a7bd5, #00d2ff);
+    color: whitesmoke;
+}  
+.bottom {
+    min-height: 81vh;
+  }
+input{
+    width: 300px;
+}
+.bg {
+    /* The image used */
+    background-image: url("src/app/login/1.jpg");
+    /* Center and scale the image nicely */
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+  }
+.centerAlign {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    margin: auto;
+    width: 50%;
+    padding: 10px;
+  }

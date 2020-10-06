@@ -1,0 +1,14 @@
+.table-responsive {
+    max-height:180px;
+}
+table {
+    width: 100%;
+  }
+th{
+    color: #fff;
+    background-color: grey;
+}
+.icon{
+    font-size: 20px;
+    margin: 5px;
+}

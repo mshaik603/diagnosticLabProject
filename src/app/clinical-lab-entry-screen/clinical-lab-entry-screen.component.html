@@ -1,0 +1,77 @@
+<div class="card bottom">
+    <div class="card-header  headerFooter">
+        <h1 class="text-center">CLINICAL LAB ENTERY SCREEN</h1>
+        <!-- <br>
+        <a routerLink='/clinicalEntry'>Home</a> /
+        <a  routerLink='/login'>Hospital Managment Login Page</a> -->
+    </div>
+<div class="card-body ">
+    <div class="row">
+        <form [formGroup]="clinicalForm" class="border-right col-8">
+            <div formGroupName="patient" class="row mr-1">
+                <div class="form-group col-4">
+                    <label>Patient Name</label>
+                    <input formControlName="pName" type="text" class="form-control form-control-sm">
+                </div>
+                <div class="form-group col-md-2">
+                    <label>Title</label>
+                    <select class="form-control form-control-sm" (change)="changeTstatus($event)" formControlName="title">
+                        <option *ngFor="let value of titleS" [ngValue]="value">{{value}}</option>
+                    </select>
+                </div>
+                <div class="form-group col-md-2">
+                    <label>Age</label>
+                    <input formControlName="pAge" type="text" class="form-control form-control-sm">
+                </div>
+                <div class="form-group col-md-2">
+                    <label>Age Title</label>
+                    <input formControlName="pAge" type="text" class="form-control form-control-sm">
+                </div>
+                <div class="form-group col-md-2">
+                    <label>Sex</label>
+                    <input formControlName="pSex" type="text" class="form-control form-control-sm">
+                </div>
+            </div>
+            <div class="row mr-1 mt-0">
+                <div class="form-group col-4">
+                    <label>Ref.By.Doctor</label>
+                    <input formControlName="refByDoc" type="text" class="form-control form-control-sm">
+                    <button mat-mini-fab color="primary" class="icon">
+                        <mat-icon>add</mat-icon>
+                    </button>
+                </div>
+                <div class="form-group col-3">
+                    <label>Date</label>
+                    <input formControlName="date" type="date" class="form-control form-control-sm">
+                </div>
+                <div class="form-group col-3">
+                    <label>Time</label>
+                    <input formControlName="time" type="text" class="form-control form-control-sm">
+                </div>
+            </div>
+            <div class="row mr-1 mt-0">
+                <div class="form-group col-4">
+                    <label>Note</label>
+                    <input formControlName="note" type="text" class="form-control form-control-sm">
+                </div>
+                <div class="form-group col-4">
+                    <label>Serial Number</label>
+                    <input formControlName="serialNo" type="text" class="form-control form-control-sm">
+                </div>
+                <div class="form-group col-4">
+                    <label>Receipt Number</label>
+                    <input formControlName="receiptNo" type="text" class="form-control form-control-sm">
+                </div>
+            </div>
+        </form>
+        <div class="col-4">
+            <app-patient-search></app-patient-search>
+        </div>
+    </div>
+    <hr/>
+    <div class="row">
+        <app-tests-grid class="col-12"></app-tests-grid>
+    </div>
+</div>
+<div class="card-footer headerFooter">Copyright MetroLab</div>
+</div>

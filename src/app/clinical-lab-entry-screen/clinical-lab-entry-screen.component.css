@@ -1,0 +1,17 @@
+.centerAlign{
+    margin: auto;
+    width: 50%;
+    padding: 10px;
+}
+.headerFooter{
+    background-color: #3f51b5;
+    color: whitesmoke;
+}  
+.bottom {
+    min-height: 100vh;
+  }
+a{
+    color: white;
+    text-align: center;
+}
+
